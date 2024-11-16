@@ -24,5 +24,5 @@ This project is a Bash script that simulates a basic **user management system** 
 ## Usage  
 1. Clone the repository:  
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/gavrilaalexandru/BashUserManagement
    cd <repository-directory>
