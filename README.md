@@ -26,3 +26,9 @@ This project is a Bash script that simulates a basic **user management system** 
    ```bash
    git clone https://github.com/gavrilaalexandru/BashUserManagement
    cd BashUserManagement/project
+2. Make all scripts executable:
+   ```bash
+   chmod +x *.sh
+3. Execute the main script with source to ensure variables and functions persist in the current shell:
+   ```bash
+   source ./main.sh
