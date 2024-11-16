@@ -33,13 +33,6 @@ This project is a Bash script that simulates a basic **user management system** 
    ```bash
    git clone https://github.com/gavrilaalexandru/BashUserManagement
    cd BashUserManagement/project
-
-
-## Usage  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/gavrilaalexandru/BashUserManagement
-   cd BashUserManagement/project
 2. Make all scripts executable:
    ```bash
    chmod +x *.sh
