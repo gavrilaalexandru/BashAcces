@@ -21,6 +21,13 @@ This project is a Bash script that simulates a basic **user management system** 
 - Generates a report for a specific user, counting the number of files, directories, and the total disk space used in their "home" directory.
 - The report is generated asynchronously and saved in the user's "home" directory.
 
+## File Structure
+- **`main.sh`**: The primary script that provides a menu-driven interface for user management, including options for user registration, login, logout, generating reports, and checking the current directory. It calls specific scripts based on user input, using source for login/logout to ensure session variables persist.
+- **`inregistrare_utilizatori.sh`**: Handles user registration, validation, and adding user details to the registry. It checks for duplicate usernames and emails, validates password strength, and ensures password confirmation matches. After registration, it generates a unique user ID, stores user details in users.csv, and creates a home directory for the user.
+- **`logare_utilizatori.sh`**: Manages user login by verifying the username against users.csv. If the user exists and is not already logged in, it prompts for a password and validates it against the stored password. After successful login, it updates the last_login field in users.csv, adds the user to the logged_in_users array, and navigates to the user’s home directory. It allows up to 3 login attempts before denying further access.
+- **`delogare_utilizatori.sh`**: Handles user logout by searching the logged_in_users array for the specified username. If the user is found, they are removed from the array and logged out. If the user is not found or there are no logged-in users, the script will display an appropriate message
+- **`raport_utlizatori.sh`**: Generates a report for a specified user, counting the number of files and directories in the user's home directory and calculating total disk usage. The report is saved as a text file in the user's home directory. The script also prompts the user to view the report after generation.
+
 ## Usage  
 1. Clone the repository:  
    ```bash
