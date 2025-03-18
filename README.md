@@ -1,4 +1,4 @@
-# 🖥️ BashAcces
+# 🖥️ UserForge
 
 This project is a Bash script that simulates a basic **user management system** with the following core functionalities:  
 
@@ -31,8 +31,8 @@ This project is a Bash script that simulates a basic **user management system** 
 ## 🚀 Usage  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/gavrilaalexandru/BashAcces
-   cd BashAcces/project
+   git clone https://github.com/gavrilaalexandru/UserForge
+   cd UserForge/project
 2. Make all scripts executable:
    ```bash
    chmod +x *.sh
