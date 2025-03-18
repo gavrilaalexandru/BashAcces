@@ -1,4 +1,4 @@
-# 🖥️ UserMgmtShell
+# 🖥️ BashAcces
 
 This project is a Bash script that simulates a basic **user management system** with the following core functionalities:  
 
